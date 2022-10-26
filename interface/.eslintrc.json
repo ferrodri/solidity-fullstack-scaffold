@@ -1,8 +1,5 @@
 {
-    "extends": [
-        "next/babel",
-        "next/core-web-vitals"
-    ],
+    "extends": [ "next/core-web-vitals" ],
     "rules": {
         "no-console": "off",
         "curly": "warn",

@@ -26,18 +26,18 @@
   },
   "homepage": "https://github.com/ferrodri/react-solidity-scaffold#readme",
   "dependencies": {
-    "@chakra-ui/icons": "2.0.8",
-    "@chakra-ui/react": "2.2.6",
-    "ethers": "5.6.9",
+    "@chakra-ui/icons": "2.0.11",
+    "@chakra-ui/react": "2.3.6",
+    "ethers": "5.7.2",
     "formik": "2.2.9",
-    "next": "12.2.4",
+    "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "wagmi": "0.6.1",
+    "wagmi": "0.7.7",
     "yup": "0.32.11"
   },
   "devDependencies": {
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4"
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.0"
   }
 }
