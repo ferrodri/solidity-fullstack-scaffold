@@ -3,6 +3,7 @@ import * as React from 'react';
 import { useAccount } from 'wagmi';
 import { Account, Connect } from '../components';
 import { useIsMounted } from '../hooks';
+import { Container, Heading } from '@chakra-ui/react';
 
 function Home() {
     const isMounted = useIsMounted();
@@ -17,14 +18,18 @@ function Home() {
             </Head>
 
             <main>
-                <h1>
-                    Welcome React and Solidity Scaffold
-                </h1>
-                <>
-                    <Connect />
-
-                    {isMounted && isConnected && ( <> <Account /> </> )}
-                </>
+                <Container display='flex' justifyContent='space-around' marginTop='16px' minWidth='600px'>
+                    <>
+                        {
+                            isMounted && isConnected
+                                ? (<> <Account /> </>)
+                                : <Heading as='h1' size='l' padding='8px'>
+                                    React and Solidity Scaffold
+                                </Heading>
+                        }
+                        <Connect />
+                    </>
+                </Container>
             </main>
         </div>
     );
