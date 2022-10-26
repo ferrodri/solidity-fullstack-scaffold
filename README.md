@@ -1,4 +1,3 @@
-TODO: Home page and bugs url in contracts/package.json and README - fork
 # Solidity Fullstack Scaffold with React
 
 # Introduction
@@ -8,7 +7,7 @@ Solidity Fullstack Scaffold with React
 # Setup
 Please read through this setup for smart contracts and interface to work.
 
-- Fork - https://github.com/ferrodri/
+- Fork - https://github.com/ferrodri/solidity-fullstack-scaffold/
 - Contracts folder
 1. Install Node Modules (nvm use / npm install)
 2. Run Tests (npx hardhat test)
