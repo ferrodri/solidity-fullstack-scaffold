@@ -2,9 +2,12 @@
     "name": "solidity-fullstack-scaffold",
     "version": "1.0.0",
     "description": "Scaffold to start a web3 project with solidity, javascript and React on the frontend",
-    "main": "index.js",
     "scripts": {
         "test": "npx hardhat test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ferrodri/solidity-fullstack-scaffold.git"
     },
     "keywords": [
         "scaffold",
@@ -15,6 +18,10 @@
     ],
     "author": "Fernando Rodriguez Hervias",
     "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ferrodri/solidity-fullstack-scaffold/issues"
+    },
+    "homepage": "https://github.com/ferrodri/solidity-fullstack-scaffold#readme",
     "devDependencies": {
         "@nomicfoundation/hardhat-network-helpers": "1.0.3",
         "@nomicfoundation/hardhat-toolbox": "1.0.2",
