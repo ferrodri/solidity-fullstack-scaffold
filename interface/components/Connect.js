@@ -1,33 +1,20 @@
-import { useAccount, useConnect, useDisconnect } from 'wagmi';
-import { useIsMounted } from '../hooks';
+import { useWeb3Modal } from '@web3modal/react';
+import { Button } from '@chakra-ui/react';
+import { useState } from 'react';
 
 export function Connect() {
-    const isMounted = useIsMounted();
-    const { connector, isConnected } = useAccount();
-    const { connect, connectors, error, isLoading, pendingConnector } =
-        useConnect();
-    const { disconnect } = useDisconnect();
+    const [loading, setLoading] = useState(false);
+    const { open } = useWeb3Modal();
+
+    async function onOpen() {
+        setLoading(true);
+        await open();
+        setLoading(false);
+    }
 
     return (
-        <>
-            <>
-                {isConnected && (
-                    <button onClick={() => disconnect()}>
-                        Logout
-                    </button>
-                )}
-
-                {connectors
-                    .filter((x) => isMounted && x.ready && x.id !== connector?.id)
-                    .map((x) => (
-                        <button key={x.id} onClick={() => connect({ connector: x })}>
-                            Connect with {x.name}
-                            {isLoading && x.id === pendingConnector?.id && ' (connecting)'}
-                        </button>
-                    ))}
-            </>
-
-            {error && <div>{error.message}</div>}
-        </>
+        <Button onClick={onOpen} disabled={loading}>
+            Connect your wallet
+        </Button >
     );
 }

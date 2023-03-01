@@ -19,16 +19,6 @@ function Home() {
 
             <main>
                 <Container display='flex' justifyContent='space-around' marginTop='16px' minWidth='600px'>
-                    <>
-                        {
-                            isMounted && isConnected
-                                ? (<> <Account /> </>)
-                                : <Heading as='h1' size='l' padding='8px'>
-                                    React and Solidity Scaffold
-                                </Heading>
-                        }
-                        <Connect />
-                    </>
                 </Container>
             </main>
         </div>

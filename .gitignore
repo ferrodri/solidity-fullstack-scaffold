@@ -38,6 +38,7 @@ node_modules
 package-lock
 yarn.lock
 .env
+.env.development
 coverage
 coverage.json
 typechain

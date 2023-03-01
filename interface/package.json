@@ -28,12 +28,14 @@
   "dependencies": {
     "@chakra-ui/icons": "2.0.11",
     "@chakra-ui/react": "2.3.6",
+    "@web3modal/ethereum": "2.0.0-rc.3",
+    "@web3modal/react": "2.0.0-rc.3",
     "ethers": "5.7.2",
     "formik": "2.2.9",
-    "next": "13.0.0",
+    "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "wagmi": "0.7.7",
+    "wagmi": "0.11.7",
     "yup": "0.32.11"
   },
   "devDependencies": {
